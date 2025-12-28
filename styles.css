@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #2c3e50;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+header .subtitle {
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+.experience-item,
+.education-item {
+    margin-bottom: 25px;
+}
+
+.experience-item h3,
+.education-item h3 {
+    font-size: 1.3em;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+.company,
+.institution {
+    font-weight: bold;
+    color: #16a085;
+    margin-bottom: 5px;
+}
+
+.period {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.experience-item li {
+    margin-bottom: 8px;
+}
+
+.skills-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.skills-list li {
+    background-color: #ecf0f1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#contact a {
+    color: #16a085;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 2px solid #ecf0f1;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+}
